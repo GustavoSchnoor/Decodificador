@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="icone-superior">
+            <img class="karlach-icone" src="assets/Karlach-icon.png" alt="imagem mulher com machado">
+            <img class="karlach-icone2" src="assets/karlach-pt2.png" alt="karlach sorrindo">
+        </div>
+
+        <section class="conteudo-lado-esquerdo">
+            <textarea name="text-input" id="area-text-input" cols="30" rows="10" placeholder="Digite seu texto..." oninput="validarTexto()"></textarea>
+
+            <div class="texto-aviso">
+                <img class="seta-direita" src="assets/seta-direita.png" alt="seta direita"> 
+                <p>Apenas letras minúsculas e sem acento</p>
+                <img class="seta-esquerda" src="assets/seta-esquerda.png" alt="seta esquerda">
+            </div>
+
+            <div class="botoes">
+                <button id="botao-criptografar" class="botao-principal" type="button" onclick="criptografar()">Criptografar</button>
+                <button id="botao-descruptografar" class="botao-principal" type="button" onclick="descriptografar()">Descriptografar</button>
+            </div>
+
+            <textarea name="text-output" id="area-text-output" cols="30" rows="10" placeholder="Ta de segredinho é ?" readonly></textarea>
+
+            <div class="botao">
+                <button class="botao-copiar" type="button" onclick="copiarTexto()">Copiar</button>
+            </div>
+                
+        </section>
+        <section class="conteudo-lado-direito">
+            <img class="img-karlach" src="assets/karlach.png" alt="mulher em chamas com machado">
+
+            <p class="conteudo-lado-direito-p1"><strong>Hey Soldier! Não me deixe esperando</strong></p>
+
+            <p class="conteudo-lado-direito-p2">Digite um texto que voce deseja Criptografar ou Descriptografar.</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="rodape">Desenvolvido por Gustavo Schnoor</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
