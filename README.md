@@ -25,3 +25,5 @@ O resultado deve ser exibido na tela.
 
 ### Extras:
 - Um botão que copie o texto criptografado/descriptografado para a área de transferência - ou seja, que tenha a mesma funcionalidade do ctrl+C ou da opção "copiar" do menu dos aplicativos.
+
+![image](https://github.com/GustavoSchnoor/Decodificador/assets/153643888/216a78c0-7515-430f-9507-58637c499ad7)
