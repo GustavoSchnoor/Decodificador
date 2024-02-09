@@ -39,7 +39,7 @@ function criptografar() {
 function descriptografar() {
     let textoEntrada = document.querySelector('#area-text-input');
     let textoSaida = document.querySelector('#area-text-output');
-    let user_text = textoSaida.value;
+    let user_text = textoEntrada.value;
     console.log(user_text);
 
     if (validaVazio(user_text)) {
@@ -50,7 +50,7 @@ function descriptografar() {
     let descriptografado = user_text.replaceAll('enter', 'e').replaceAll('imes', 'i').replaceAll('ai', 'a').replaceAll('ober', 'o').replaceAll('ufat', 'u');
     console.log(descriptografado);
 
-    textoEntrada.value = descriptografado;
+    textoSaida.value = descriptografado;
 }
 
 async function copiarTexto() {
